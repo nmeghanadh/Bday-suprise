@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 23rd Birthday, Anwi! 🍫✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #120e0b; color: #f5f2eb; }
+        .chocolate-card { background: linear-gradient(135deg, #2b1b17 0%, #1a100c 100%); border: 1px solid rgba(212, 175, 55, 0.2); }
+        .gold-glow { text-shadow: 0 0 25px rgba(212, 175, 55, 0.4); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 sm:p-8 overflow-x-hidden selection:bg-[#d4af37] selection:text-black">
+    
+    <!-- Header -->
+    <header class="w-full max-w-2xl text-center py-6">
+        <span class="inline-block bg-[#d4af37]/20 text-[#d4af37] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-3 border border-[#d4af37]/30">
+            October 22nd • Special Edition
+        </span>
+        <h1 class="text-4xl sm:text-6xl font-extrabold gold-glow mb-2">Happy 23rd Birthday, Anwi! 🍫</h1>
+        <p class="text-gray-400 text-sm sm:text-base">Just before the clock strikes midnight... a special tribute crafted with love.</p>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="w-full max-w-2xl space-y-6 my-auto">
+        
+        <!-- Origin & Current HQ -->
+        <div class="chocolate-card rounded-2xl p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-6 -bottom-6 text-8xl opacity-10 select-none pointer-events-none">✨</div>
+            <h2 class="text-xl font-bold text-[#d4af37] mb-4 flex items-center gap-2">
+                <span>📍</span> The Anwi Audit & Timeline
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div class="bg-black/30 p-4 rounded-xl border border-white/5">
+                    <span class="text-gray-400 block text-xs uppercase tracking-wider">Origin Story</span>
+                    <strong class="text-white text-base block mt-1">Vijayalakshmi Hospital, Nellore</strong>
+                    <span class="text-gray-500 block text-xs mt-1">October 22, 2003 @ 2:12 AM</span>
+                </div>
+                <div class="bg-black/30 p-4 rounded-xl border border-white/5">
+                    <span class="text-gray-400 block text-xs uppercase tracking-wider">Current HQ</span>
+                    <strong class="text-white text-base block mt-1">Goldman Sachs, Bangalore</strong>
+                    <span class="text-gray-500 block text-xs mt-1">Chartered Accountant (CA)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Balance Sheet of Traits -->
+        <div class="chocolate-card rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <h3 class="text-xl font-bold text-[#d4af37] mb-4 flex items-center gap-2">
+                <span>📊</span> Balance Sheet of Awesomeness
+            </h3>
+            <ul class="space-y-3 text-sm">
+                <li class="flex items-center justify-between bg-black/30 p-3.5 rounded-lg border border-white/5">
+                    <span class="text-gray-300">Core Value: Unshakable Honesty</span>
+                    <span class="text-[#d4af37] font-semibold">100% Verified</span>
+                </li>
+                <li class="flex items-center justify-between bg-black/30 p-3.5 rounded-lg border border-white/5">
+                    <span class="text-gray-300">Superpower: Practicality & Precision</span>
+                    <span class="text-[#d4af37] font-semibold">Flawless Execution</span>
+                </li>
+                <li class="flex items-center justify-between bg-black/30 p-3.5 rounded-lg border border-white/5">
+                    <span class="text-gray-300">Essential Fuel: Dark Chocolates</span>
+                    <span class="text-[#d4af37] font-semibold">Unlimited Supply Required</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Celebration Button -->
+        <div class="text-center pt-2">
+            <button onclick="triggerCelebration()" class="w-full sm:w-auto bg-gradient-to-r from-[#d4af37] to-[#aa8c2c] text-black font-bold px-8 py-4 rounded-xl shadow-lg hover:opacity-90 transition transform hover:scale-105 active:scale-95 text-base">
+                🎉 Tap to Launch Birthday Confetti!
+            </button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-2xl text-center py-6 text-xs text-gray-500 border-t border-white/5 mt-8">
+        Wishing you the absolute best year ahead, Anwi! 🌟
+    </footer>
+
+    <script>
+        function triggerCelebration() {
+            confetti({
+                particleCount: 150,
+                spread: 90,
+                origin: { y: 0.6 },
+                colors: ['#d4af37', '#8b5a2b', '#ffffff', '#e6c687', '#3d2314']
+            });
+        }
+        // Auto trigger celebration on load
+        window.onload = () => {
+            setTimeout(triggerCelebration, 400);
+        };
+    </script>
+</body>
+</html>
